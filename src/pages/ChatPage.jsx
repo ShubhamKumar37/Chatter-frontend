@@ -33,8 +33,9 @@ const ChatPage = () => {
     channel.sendMessage({
       text: `Join this for a video call: ${callUrl}`
     });
-
+    
     toast.success("Video call link sent to the user");
+    window.location.href = callUrl;
   }
 
   useEffect(() => {
